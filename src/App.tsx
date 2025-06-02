@@ -1,10 +1,11 @@
-import './App.css'
+import Layout from './components/layout/Layout'
+import MarkdownEditor from './components/markdown/MarkdownEditor'
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Markify</h1>
-    </div>
+    <Layout>
+      <MarkdownEditor />
+    </Layout>
   )
 }
 
