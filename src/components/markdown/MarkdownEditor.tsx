@@ -19,7 +19,7 @@ export default function MarkdownEditor() {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(inputText)
+      await navigator.clipboard.writeText(markdown)
       toast('클립보드로 복사되었습니다. 원하는 곳에 붙여넣기 해보세요!')
     } catch (error: unknown) {
       console.error(error)
@@ -28,7 +28,7 @@ export default function MarkdownEditor() {
   }
 
   const handleDownloadFile = () => {
-    downloadTextFile(markdown, 'converted.md')
+    downloadTextFile(markdown, 'README.md')
   }
 
   return (
